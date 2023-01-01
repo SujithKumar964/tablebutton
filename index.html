@@ -25,6 +25,17 @@
 <body>
     <button id="btn">Click here</button>
     <div id="cls"></div>
-    <script src="3assign2.js"></script>
+    <script>
+        function f(){
+            let a1=["Sujith","Suji","Kumar"];
+            let s="";
+            for(let i=0;i<a1.length;i++){
+                s=s+`<tr><td>${i+1}</td><td>${a1[i]}</td></tr>`;
+            }
+            let k=document.getElementById("cls");
+            k.innerHTML="<table>"+s+"</table>";
+        }
+        let a=document.getElementById("btn");
+    </script>
 </body>
 </html>
